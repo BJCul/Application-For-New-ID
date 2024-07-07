@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+        <title>APPLICATION FOR REPLACEMENT OF LOST/STOLEN ID</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
+    </head>
+    <body>
+
+        <section class="header">
+            <nav>
+                <img src="assets/images/PUPLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="landing.html">HOME</a></li>
+                        <li><a href="index.html">APPLY</a></li>
+                        <li><a href="about.html">ABOUT</a></li>    
+                        <li><a href="contacts.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="title">
+            <h2>APPLICATION FOR REPLACEMENT OF LOST/STOLEN IDENTIFICATION CARD</h2>
+        </div>
+        <div>
+            <div id="multi-step-form-container">
+                <ul class="form-progress form-progress-horizontal text-center mx-auto padleft-0">
+                    <li class="form-progress-active text-center form-progress-list" step="1">
+                        <a class="mx-2">
+                            <span class="form-progress-circle">
+                                <span>1</span>
+                            </span>
+                            <div class="label">Personal Information</div>
+                        </a>
+                    </li>
+                    <li class="form-progress-unfinished text-center form-progress-list" step="2">
+                        <a class="mx-2">
+                            <span class="form-progress-circle text-muted">
+                                <span>2</span>
+                            </span>
+                            <div class="label text-muted">Address</div>
+                        </a>
+                    </li>
+                    <li class="form-progress-unfinished text-center form-progress-list" step="3">
+                        <a class="mx-2">
+        
+                            <span class="form-progress-circle text-muted">
+                                <span>3</span>
+                            </span>
+                            <div class="label text-muted">Contacts</div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Form -->
+                <form class="input-form" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                    <section id="step-1" class="form-step">
+                        <h2 class="font-normal">Personal Information</h2>
+                        <div class="mt-3">
+                            <input class="box1" type="text" name="FirstName" placeholder="First Name" required>
+                            <input class="box1" type="text" name="MiddleName" placeholder="Middle Name" required>
+                            <input class="box1" type="text" name="LastName" placeholder="Last Name" required>
+                            <input class="box1" type="text" name="StudentNumber" placeholder="Student Number" required>
+                            <input class="box1" type="date" name="BirthDate" placeholder="Date of Birth" required>
+                            <input class="box1" type="text" name="Gender" placeholder="Gender" required>
+                            <input class="box1" type="text" name="College" placeholder="College" required>
+                            <input class="box1" type="text" name="Course" placeholder="Course" required>
+                            <input class="box1" type="text" name="YearAndSection" placeholder="Year and Section" required>
+                            <input class="box1" type="number" name="PhoneNo" placeholder="Phone/Mobile No." required>
+                            <input class="box1" type="email" name="EmailAddress" placeholder="Email Address" required>
+                        </div>
+                        <div class="mt-3">
+                            <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                        </div>
+                    </section>
+                    <section id="step-2" class="form-step display-none">
+                        <h2 class="font-normal">Address</h2>
+                        <div class="mt-3">
+                            <!-- Region, Province, City, Barangay, Street, Postal Code -->
+                            <input class="box1" type="text" name="Region" placeholder="Region" required>
+                            <input class="box1" type="text" name="Province" placeholder="Province" required>
+                            <input class="box1" type="text" name="City" placeholder="City" required>
+                            <input class="box1" type="text" name="Barangay" placeholder="Barangay" required>
+                            <input class="box1" type="date" name="Street" placeholder="Street" required>
+                            <input class="box1" type="date" name="PostalCode" placeholder="Postal Code" required>
+                        </div>
+                        <div class="mt-3">
+                            <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                            <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                        </div>
+                    </section>
+                    <section id="step-3" class="form-step display-none">
+                        <h2 class="font-normal">Contacts</h2>
+                        <p>In case of emergency, notify</p>
+                        <div class="mt-3">
+                            <input class="box1" type="text" name="CompleteName" placeholder="Complete Name" required>
+                            <input class="box1" type="text" name="Relation" placeholder="Relation" required>
+                            <input class="box1" type="number" name="PhoneNo2" placeholder="Phone/ Mobile No." required>
+                            <p>Address</p>
+                            <div class="radio-container">
+                                <input type="radio" id="Address2" name="Address2" value="Address2">
+                                <label for="Address2">Same as Home Address</label><br>
+                            </div>
+                            <input class ="hidden" type="text">
+                            <input class="box1" type="text" name="Region" placeholder="Region" required>
+                            <input class="box1" type="text" name="Province" placeholder="Province" required>
+                            <input class="box1" type="text" name="City" placeholder="City" required>
+                            <input class="box1" type="text" name="Barangay" placeholder="Barangay" required>
+                            <input class="box1" type="date" name="Street" placeholder="Street" required>
+                            <input class="box1" type="number" name="PostalCode" placeholder="Postal Code" required>
+                        </div>
+                        <div class="mt-3">
+                            <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                            <button class="button submit-btn" type="submit">Submit</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="text-box">
+
+            <h4>ID Information</h4>
+            <p>Fill in all the information below. 
+            </p>
+            
+            <a href="" class="hero-btn">Submit Form</a>
+        </div>
+        </section> -->
+        <script>
+            const navigateToFormStep = (stepNumber) => {
+                /*** Hide steps ***/
+                document.querySelectorAll(".form-step").forEach((formStepElement) => {
+                    formStepElement.classList.add("display-none");
+                });
+                /*** Mark unfinished ***/
+                document.querySelectorAll(".form-progress-list").forEach((formStepHeader) => {
+                    formStepHeader.classList.add("form-progress-unfinished");
+                    formStepHeader.classList.remove("form-progress-active", "form-progress-completed");
+                });
+                
+                /*** Show current ***/
+                document.querySelector("#step-" + stepNumber).classList.remove("display-none");
+                
+                /*** Select step circle (progress bar) ***/
+                const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+                
+                /*** Mark current as active ***/
+                formStepCircle.classList.remove("form-progress-unfinished", "form-progress-completed");
+                formStepCircle.classList.add("form-progress-active");
+                
+                /*** Loop through each step  ***/
+                for (let index = 0; index < stepNumber; index++) {
+                    const formStepCircle = document.querySelector('li[step="' + index + '"]');
+                    if (formStepCircle) {
+            
+                        formStepCircle.classList.remove("form-progress-unfinished", "form-progress-active");
+                        formStepCircle.classList.add("form-progress-completed");
+                    }
+                }
+            };
+            
+            /*** Select all navigation buttons, loop through them, add listener ***/
+            document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+                formNavigationBtn.addEventListener("click", () => {
+                    const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+                    navigateToFormStep(stepNumber);
+                });
+            });
+            </script>
