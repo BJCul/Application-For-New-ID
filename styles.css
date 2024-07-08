@@ -499,5 +499,12 @@ ul.form-progress li a .form-progress-circle {
     padding-left: 20px;
 }
 
+.form-footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 
 
