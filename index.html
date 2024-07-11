@@ -12,14 +12,21 @@
 
         <section class="header">
             <nav>
-                <img src="assets/images/PUPLogo.png"></a>
+                <a href="home.html"><img src="assets/images/PUPLogo.png" class="pup-logo"></a>
+                <div class="header-title">
+                    <p>
+                        Polytechnic University of the Philippines<br>
+                        The Country's 1st PolytechnicU
+                    </p>
+                </div>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="landing.html">HOME</a></li>
+                        <li><a href="home.html">HOME</a></li>
                         <li><a href="index.html">APPLY</a></li>
                         <li><a href="about.html">ABOUT</a></li>    
                         <li><a href="contacts.html">CONTACTS</a></li>
+                        <li><a href="landing.html">LOGOUT</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -59,62 +66,145 @@
                 <!-- Form -->
                 <form class="input-form" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
                     <section id="step-1" class="form-step">
-                        <h2 class="font-normal">Personal Information</h2>
+                        <h2 class="font-normal"><strong>Personal Information</strong></h2>
                         <p>Fill in all the information below.</p>
                         <div class="mt-3">
-                            <input class="box1" id="FirstName" type="text" name="FirstName" placeholder="First Name" required>
-                            <input class="box1" id="MiddleName" type="text" name="MiddleName" placeholder="Middle Name" required>
-                            <input class="box1" id="LastName" type="text" name="LastName" placeholder="Last Name" required>
-                            <input class="box1" id="StudentNumber" type="text" name="StudentNumber" placeholder="Student Number" required>
-                            <input class="box1" id="BirthDate" type="date" name="BirthDate" placeholder="Date of Birth" required>
-                            <input class="box1" id="Gender" type="text" name="Gender" placeholder="Gender" required>
-                            <input class="box1" id="College" type="text" name="College" placeholder="College" required>
-                            <input class="box1" id="Course" type="text" name="Course" placeholder="Course" required>
-                            <input class="box1" id="YearAndSection" type="text" name="YearAndSection" placeholder="Year and Section" required>
-                            <input class="box1" id="PhoneNo" type="number" name="PhoneNo" placeholder="Phone/Mobile No." required>
-                            <input class="box1" id="EmailAddress" type="email" name="EmailAddress" placeholder="Email Address" required>
+                            <div>
+                                <label for="FirstName">First Name*</label>
+                                <input class="box1" id="FirstName" type="text" name="FirstName" placeholder="First Name" required>
+                            </div>
+                            <div>
+                                <label for="MiddleName">Middle Name</label>
+                                <input class="box1" id="MiddleName" type="text" name="MiddleName" placeholder="Middle Name" required>
+                            </div>
+                            <div>
+                                <label for="LastName">Last Name</label>
+                                <input class="box1" id="LastName" type="text" name="LastName" placeholder="Last Name" required>
+                            </div>
+                            <div>
+                                <label for="StudentNumber">Student Number</label>
+                                <input class="box1" id="StudentNumber" type="text" name="StudentNumber" placeholder="Student Number" required>
+                            </div>
+                            <div>
+                                <label for="BirthDate">Date of Birth</label>
+                                <input class="box1" id="BirthDate" type="date" name="BirthDate" placeholder="Date of Birth" required>
+                            </div>
+                            <div>
+                                <label for="Gender">Gender</label>
+                                <input class="box1" id="Gender" type="text" name="Gender" placeholder="Gender" required>
+                            </div>
+                            <div>
+                                <label for="College">College</label>
+                                <input class="box1" id="College" type="text" name="College" placeholder="College" required>
+                            </div>
+                            <div>
+                                <label for="Course">Course</label>
+                                <input class="box1" id="Course" type="text" name="Course" placeholder="Course" required>
+                            </div>
+                            <div>
+                                <label for="YearAndSection">Year and Section</label>
+                                <input class="box1" id="YearAndSection" type="text" name="YearAndSection" placeholder="Year and Section" required>
+                            </div>
+                            <div>
+                                <label for="PhoneNo">Phone/Mobile No.</label>
+                                <input class="box1" id="PhoneNo" type="number" name="PhoneNo" placeholder="Phone/Mobile No." required>
+                            </div>
+                            <div>
+                                <label for="EmailAddress">Email Address</label>
+                                <input class="box1" id="EmailAddress" type="email" name="EmailAddress" placeholder="Email Address" required>
+                            </div>
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-3-button">
                             <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
                         </div>
                     </section>
                     <section id="step-2" class="form-step display-none">
-                        <h2 class="font-normal">Address</h2>
+                        <h2 class="font-normal"><strong>Address</strong></h2>
+                        <p>Fill in your home address.</p>
                         <div class="mt-3">
-                            <!-- Region, Province, City, Barangay, Street, Postal Code -->
-                            <input class="box1" type="text" name="Region" placeholder="Region" required>
-                            <input class="box1" type="text" name="Province" placeholder="Province" required>
-                            <input class="box1" type="text" name="City" placeholder="City" required>
-                            <input class="box1" type="text" name="Barangay" placeholder="Barangay" required>
-                            <input class="box1" type="date" name="Street" placeholder="Street" required>
-                            <input class="box1" type="date" name="PostalCode" placeholder="Postal Code" required>
+                            <div>
+                                <label for="Region">Region</label>
+                                <input class="box1" id="Region" type="text" name="Region" placeholder="Region" required>
+                            </div>
+                            <div>
+                                <label for="Province">Province</label>
+                                <input class="box1" id="Province" type="text" name="Province" placeholder="Province" required>
+                            </div>
+                            <div>
+                                <label for="City">City</label>
+                                <input class="box1" id="City" type="text" name="City" placeholder="City" required>
+                            </div>
+                            <div>
+                                <label for="Barangay">Barangay</label>
+                                <input class="box1" id="Barangay" type="text" name="Barangay" placeholder="Barangay" required>
+                            </div>
+                            <div>
+                                <label for="Street">Street</label>
+                                <input class="box1" id="Street" type="text" name="Street" placeholder="Street" required>
+                            </div>
+                            <div>
+                                <label for="PostalCode">Postal Code</label>
+                                <input class="box1" id="PostalCode" type="text" name="PostalCode" placeholder="Postal Code" required>
+                            </div>
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-3-button">
                             <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
                             <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
                         </div>
                     </section>
                     <section id="step-3" class="form-step display-none">
-                        <h2 class="font-normal">Contacts</h2>
+                        <h2 class="font-normal"><strong>Contacts</strong></h2>
                         <p>In case of emergency, notify</p>
                         <div class="mt-3">
-                            <input class="box1" type="text" name="CompleteName" placeholder="Complete Name" required>
-                            <input class="box1" type="text" name="Relation" placeholder="Relation" required>
-                            <input class="box1" type="number" name="PhoneNo2" placeholder="Phone/ Mobile No." required>
+                            <div>
+                                <label for="CompleteName">Complete Name</label>
+                                <input class="box1" id="CompleteName" type="text" name="CompleteName" placeholder="Complete Name" required>
+                            </div>
+                            <div>
+                                <label for="Relation">Relation</label>
+                                <input class="box1" id="Relation" type="text" name="Relation" placeholder="Relation" required>
+                            </div>
+                            <div>
+                                <label for="PhoneNo2">Phone/Mobile No.</label>
+                                <input class="box1" id="PhoneNo2" type="number" name="PhoneNo2" placeholder="Phone/Mobile No." required>
+                            </div>
+                            
                             <p>Address</p>
                             <div class="radio-container">
                                 <input type="radio" id="Address2" name="Address2" value="Address2">
-                                <label for="Address2">Same as Home Address</label><br>
+                                <label for="Address2">Same as Home Address</label>
                             </div>
-                            <input class ="hidden" type="text">
-                            <input class="box1" type="text" name="Region" placeholder="Region" required>
-                            <input class="box1" type="text" name="Province" placeholder="Province" required>
-                            <input class="box1" type="text" name="City" placeholder="City" required>
-                            <input class="box1" type="text" name="Barangay" placeholder="Barangay" required>
-                            <input class="box1" type="date" name="Street" placeholder="Street" required>
-                            <input class="box1" type="number" name="PostalCode" placeholder="Postal Code" required>
+                            
+                            <div>
+                                <input class="hidden" type="text">
+                            </div>
+                            <div>
+                                <label for="Region">Region</label>
+                                <input class="box1" id="Region" type="text" name="Region" placeholder="Region" required>
+                            </div>
+                            <div>
+                                <label for="Province">Province</label>
+                                <input class="box1" id="Province" type="text" name="Province" placeholder="Province" required>
+                            </div>
+                            <div>
+                                <label for="City">City</label>
+                                <input class="box1" id="City" type="text" name="City" placeholder="City" required>
+                            </div>
+                            <div>
+                                <label for="Barangay">Barangay</label>
+                                <input class="box1" id="Barangay" type="text" name="Barangay" placeholder="Barangay" required>
+                            </div>
+                            <div>
+                                <label for="Street">Street</label>
+                                <input class="box1" id="Street" type="date" name="Street" placeholder="Street" required>
+                            </div>
+                            <div>
+                                <label for="PostalCode">Postal Code</label>
+                                <input class="box1" id="PostalCode" type="number" name="PostalCode" placeholder="Postal Code" required>
+                            </div>
                         </div>
-                        <div class="mt-3">
+                        
+                        <div class="mt-3-button">
                             <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
                             <button class="button submit-btn" type="submit">Save</button>
                         </div>

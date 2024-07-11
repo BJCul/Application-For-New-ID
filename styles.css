@@ -5,6 +5,8 @@
     
 }
 
+
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -13,6 +15,22 @@
     background-size: cover;
     position: relative;
     background:#d2d1d1;
+}
+
+.header-title p{ 
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+label{
+    margin-left: 20px;
+}
+
+.pup-logo{
+    height: 70px;
+    width: 70px;
 }
 
 nav{
@@ -390,7 +408,15 @@ h2 {
     gap: 50px;
     width: 90%;
     padding: 20px;
+    padding-top: 50px;
 }
+
+.mt-3-button{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .display-none {
     display: none;
 }
@@ -401,7 +427,7 @@ h2 {
 }
 .font-normal {
     font-weight: normal;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 ul.form-progress {
     counter-reset: section;
