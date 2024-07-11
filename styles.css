@@ -73,6 +73,10 @@ nav img{
     
 }
 
+.title{
+    padding-bottom: 3%;
+}
+
 .title h3{
     top: 15%;
     color: rgb(0, 0, 0);
@@ -391,6 +395,9 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .submit-btn {
     border: 1px solid rgb(42,121,239);
@@ -406,12 +413,14 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 50px;
+    row-gap: 30px;
     width: 90%;
     padding: 20px;
     padding-top: 50px;
 }
 
 .mt-3-button{
+    padding-top: 50px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -450,6 +459,8 @@ ul.form-progress .form-progress-circle span {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 ul.form-progress > li:not(:last-of-type) {
     margin-bottom: 0.625rem;

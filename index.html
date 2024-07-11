@@ -75,7 +75,7 @@
                             </div>
                             <div>
                                 <label for="MiddleName">Middle Name</label>
-                                <input class="box1" id="MiddleName" type="text" name="MiddleName" placeholder="Middle Name" required>
+                                <input class="box1" id="MiddleName" type="text" name="MiddleName" placeholder="Middle Name">
                             </div>
                             <div>
                                 <label for="LastName">Last Name</label>
@@ -247,7 +247,6 @@
                 for (let index = 0; index < stepNumber; index++) {
                     const formStepCircle = document.querySelector('li[step="' + index + '"]');
                     if (formStepCircle) {
-            
                         formStepCircle.classList.remove("form-progress-unfinished", "form-progress-active");
                         formStepCircle.classList.add("form-progress-completed");
                     }
@@ -260,6 +259,14 @@
                     const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
                     navigateToFormStep(stepNumber);
                 });
+            });
+
+            document.getElementById("userAccountSetupForm").addEventListener("submit", (event) => {
+                event.preventDefault(); // Prevent default form submission
+
+                // Handle form data submission here (e.g., AJAX request)
+
+                // Optionally, reset form or show success message
             });
 
         </script>
