@@ -542,6 +542,7 @@ ul.form-progress li a .form-progress-circle {
 .form-progress .form-progress-completed .label {
     color: #ad7d15 !important;
 }
+
 .form-progress .form-progress-completed .form-progress-circle:hover {
     background-color: #ad7d15 !important;
     color: #fff !important;
@@ -575,6 +576,10 @@ ul.form-progress li a .form-progress-circle {
     gap: 60px;   
 }
 
+.error-input {
+    border: 1px solid red;
+}
+
 .radio-container input[type="radio"] {
     margin-right: -75px; /* Reduce margin to bring label closer to radio button */
 }
@@ -595,6 +600,10 @@ ul.form-progress li a .form-progress-circle {
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.required-field {
+    color: red;
 }
 
 
