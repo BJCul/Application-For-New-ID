@@ -266,9 +266,36 @@ nav .fa{
     width: 400px;
     align-items: center;
     padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.forgot-input-box{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 400px;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.input-login-box1{
+    padding: 12px;
+    margin: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 .box1{
+    padding: 12px;
+    margin: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.forgotps-box1{
     padding: 12px;
     margin: 20px;
     width: 100%;
@@ -286,6 +313,21 @@ nav .fa{
     justify-content: center;
     align-items: center; 
     margin-top: 40px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.request-student1{
+    background-color: rgb(42,121,239);
+    width: 105%;
+    height: 120px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
     color: #fff;
     border: none;
     cursor: pointer;
