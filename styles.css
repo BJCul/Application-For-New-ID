@@ -395,9 +395,9 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
-    padding: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .submit-btn {
     border: 1px solid rgb(42,121,239);
@@ -419,11 +419,19 @@ h2 {
     padding-top: 50px;
 }
 
+.address-radio-container{
+    grid-column: span 3;
+}
+
 .mt-3-button{
     padding-top: 50px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mt-3-button button {
+    margin-right: 15px; /* Adjust the margin as needed */
 }
 
 .display-none {
@@ -560,11 +568,15 @@ ul.form-progress li a .form-progress-circle {
 .radio-container{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin: 10px;
     padding: 10px;
-    gap: 20px;   
+    gap: 60px;   
+}
+
+.radio-container input[type="radio"] {
+    margin-right: -75px; /* Reduce margin to bring label closer to radio button */
 }
 
 .hidden{
