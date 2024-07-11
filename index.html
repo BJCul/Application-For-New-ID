@@ -64,7 +64,7 @@
                     </li>
                 </ul>
                 <!-- Form -->
-                <form class="input-form" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                <form class="input-form" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST" action="https://script.google.com/macros/s/AKfycbxJOddLjPVK8QyR7PsJtzsopt9zQxetij9Tv9Deszrv1UW9fDuJBuK6Q2z2rG-HuKiR/exec">
                     <section id="step-1" class="form-step">
                         <h2 class="font-normal"><strong>Personal Information</strong></h2>
                         <p>Fill in all the information below.</p>
@@ -260,14 +260,6 @@
                     const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
                     navigateToFormStep(stepNumber);
                 });
-            });
-
-            document.getElementById("userAccountSetupForm").addEventListener("submit", (event) => {
-                event.preventDefault(); // Prevent default form submission
-
-                // Handle form data submission here (e.g., AJAX request)
-
-                // Optionally, reset form or show success message
             });
 
             document.getElementById('sameAddress').addEventListener('change', function() {
