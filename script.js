@@ -221,7 +221,7 @@ document.getElementById('userAccountSetupForm').addEventListener('submit', funct
     
     /*** Redirect to index.html after a short delay ***/
     setTimeout(function() {
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     }, 1000); 
 });
 
