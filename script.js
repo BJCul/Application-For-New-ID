@@ -100,107 +100,107 @@ document.getElementById('PhoneNo2').addEventListener('input', () => validatePhon
 
 const courses = {
     CAF: [
-        {value: "BSA", text: "Bachelor of Science in Accountancy (BSA)"},
-        {value: "BSMA", text: "Bachelor of Science in Management Accounting (BSMA)"},
-        {value: "BSBAFM", text: "Bachelor of Science in Business Administration Major in Financial Management (BSBAFM)"}
+        {value: "Bachelor of Science in Accountancy (BSA)", text: "Bachelor of Science in Accountancy (BSA)"},
+        {value: "Bachelor of Science in Management Accounting (BSMA)", text: "Bachelor of Science in Management Accounting (BSMA)"},
+        {value: "Bachelor of Science in Business Administration Major in Financial Management (BSBAFM)", text: "Bachelor of Science in Business Administration Major in Financial Management (BSBAFM)"}
     ],
     CADBE: [
-        {value: "BS-ARCH", text: "Bachelor of Science in Architecture (BS-ARCH)"},
-        {value: "BSID", text: "Bachelor of Science in Interior Design (BSID)"},
-        {value: "BSEP", text: "Bachelor of Science in Environmental Planning (BSEP)"}
+        {value: "Bachelor of Science in Architecture (BS-ARCH)", text: "Bachelor of Science in Architecture (BS-ARCH)"},
+        {value: "Bachelor of Science in Interior Design (BSID)", text: "Bachelor of Science in Interior Design (BSID)"},
+        {value: "Bachelor of Science in Environmental Planning (BSEP)", text: "Bachelor of Science in Environmental Planning (BSEP)"}
     ],
     CAL: [
-        {value: "ABELS", text: "Bachelor of Arts in English Language Studies (ABELS)"},
-        {value: "ABF", text: "Bachelor of Arts in Filipinology (ABF)"},
-        {value: "ABLCS", text: "Bachelor of Arts in Literary and Cultural Studies (ABLCS)"},
-        {value: "AB-PHILO", text: "Bachelor of Arts in Philosophy (AB-PHILO)"},
-        {value: "BPEA", text: "Bachelor of Performing Arts major in Theater Arts (BPEA)"}
+        {value: "Bachelor of Arts in English Language Studies (ABELS)", text: "Bachelor of Arts in English Language Studies (ABELS)"},
+        {value: "Bachelor of Arts in Filipinology (ABF)", text: "Bachelor of Arts in Filipinology (ABF)"},
+        {value: "Bachelor of Arts in Literary and Cultural Studies (ABLCS)", text: "Bachelor of Arts in Literary and Cultural Studies (ABLCS)"},
+        {value: "Bachelor of Arts in Philosophy (AB-PHILO)", text: "Bachelor of Arts in Philosophy (AB-PHILO)"},
+        {value: "Bachelor of Performing Arts major in Theater Arts (BPEA)", text: "Bachelor of Performing Arts major in Theater Arts (BPEA)"}
     ],
     CBA: [
-        {value: "DBA", text: "Doctor in Business Administration (DBA)"},
-        {value: "MBA", text: "Master in Business Administration (MBA)"},
-        {value: "BSBAHRM", text: "Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)"},
-        {value: "BSBA-MM", text: "Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)"},
-        {value: "BSENTREP", text: "Bachelor of Science in Entrepreneurship (BSENTREP)"},
-        {value: "BSOA", text: "Bachelor of Science in Office Administration (BSOA)"}
+        {value: "Doctor in Business Administration (DBA)", text: "Doctor in Business Administration (DBA)"},
+        {value: "Master in Business Administration (MBA)", text: "Master in Business Administration (MBA)"},
+        {value: "Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)", text: "Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)"},
+        {value: "Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)", text: "Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)"},
+        {value: "Bachelor of Science in Entrepreneurship (BSENTREP)", text: "Bachelor of Science in Entrepreneurship (BSENTREP)"},
+        {value: "Bachelor of Science in Office Administration (BSOA)", text: "Bachelor of Science in Office Administration (BSOA)"}
     ],
     COC: [
-        {value: "BADPR", text: "Bachelor in Advertising and Public Relations (BADPR)"},
-        {value: "BA Broadcasting", text: "Bachelor of Arts in Broadcasting (BA Broadcasting)"},
-        {value: "BACR", text: "Bachelor of Arts in Communication Research (BACR)"},
-        {value: "BAJ", text: "Bachelor of Arts in Journalism (BAJ)"}
+        {value: "Bachelor in Advertising and Public Relations (BADPR)", text: "Bachelor in Advertising and Public Relations (BADPR)"},
+        {value: "Bachelor of Arts in Broadcasting (BA Broadcasting)", text: "Bachelor of Arts in Broadcasting (BA Broadcasting)"},
+        {value: "Bachelor of Arts in Communication Research (BACR)", text: "Bachelor of Arts in Communication Research (BACR)"},
+        {value: "Bachelor of Arts in Journalism (BAJ)", text: "Bachelor of Arts in Journalism (BAJ)"}
     ],
     CCIS: [
-        {value: "BSCS", text: "Bachelor of Science in Computer Science (BSCS)"},
-        {value: "BSIT", text: "Bachelor of Science in Information Technology (BSIT)"}
+        {value: "Bachelor of Science in Computer Science (BSCS)", text: "Bachelor of Science in Computer Science (BSCS)"},
+        {value: "Bachelor of Science in Information Technology (BSIT)", text: "Bachelor of Science in Information Technology (BSIT)"}
     ],
     COED: [
-        {value: "PhDEM", text: "Doctor of Philosophy in Education Management (PhDEM)"},
-        {value: "MAEM", text: "Master of Arts in Education Management (MAEM)"},
-        {value: "MBE", text: "Master in Business Education (MBE)"},
-        {value: "MLIS", text: "Master in Library and Information Science (MLIS)"},
-        {value: "MAELT", text: "Master of Arts in English Language Teaching (MAELT)"},
-        {value: "MAEd-ME", text: "Master of Arts in Education major in Mathematics Education (MAEd-ME)"},
-        {value: "MAPES", text: "Master of Arts in Physical Education and Sports (MAPES)"},
-        {value: "MAED-TCA", text: "Master of Arts in Education major in Teaching in the Challenged Areas (MAED-TCA)"},
-        {value: "PBDE", text: "Post-Baccalaureate Diploma in Education (PBDE)"},
-        {value: "BTLEd", text: "Bachelor of Technology and Livelihood Education (BTLEd)"},
-        {value: "BLIS", text: "Bachelor of Library and Information Science (BLIS)"},
-        {value: "BSEd", text: "Bachelor of Secondary Education (BSEd)"},
-        {value: "BEEd", text: "Bachelor of Elementary Education (BEEd)"},
-        {value: "BECEd", text: "Bachelor of Early Childhood Education (BECEd)"}
+        {value: "Doctor of Philosophy in Education Management (PhDEM)", text: "Doctor of Philosophy in Education Management (PhDEM)"},
+        {value: "Master of Arts in Education Management (MAEM)", text: "Master of Arts in Education Management (MAEM)"},
+        {value: "Master in Business Education (MBE)", text: "Master in Business Education (MBE)"},
+        {value: "Master in Library and Information Science (MLIS)", text: "Master in Library and Information Science (MLIS)"},
+        {value: "Master of Arts in English Language Teaching (MAELT)", text: "Master of Arts in English Language Teaching (MAELT)"},
+        {value: "Master of Arts in Education major in Mathematics Education (MAEd-ME)", text: "Master of Arts in Education major in Mathematics Education (MAEd-ME)"},
+        {value: "Master of Arts in Physical Education and Sports (MAPES)", text: "Master of Arts in Physical Education and Sports (MAPES)"},
+        {value: "Master of Arts in Education major in Teaching in the Challenged Areas (MAED-TCA)", text: "Master of Arts in Education major in Teaching in the Challenged Areas (MAED-TCA)"},
+        {value: "Post-Baccalaureate Diploma in Education (PBDE)", text: "Post-Baccalaureate Diploma in Education (PBDE)"},
+        {value: "Bachelor of Technology and Livelihood Education (BTLEd)", text: "Bachelor of Technology and Livelihood Education (BTLEd)"},
+        {value: "Bachelor of Library and Information Science (BLIS)", text: "Bachelor of Library and Information Science (BLIS)"},
+        {value: "Bachelor of Secondary Education (BSEd)", text: "Bachelor of Secondary Education (BSEd)"},
+        {value: "Bachelor of Elementary Education (BEEd)", text: "Bachelor of Elementary Education (BEEd)"},
+        {value: "Bachelor of Early Childhood Education (BECEd)", text: "Bachelor of Early Childhood Education (BECEd)"}
     ],
     CE: [
-        {value: "BSCE", text: "Bachelor of Science in Civil Engineering (BSCE)"},
-        {value: "BSCpE", text: "Bachelor of Science in Computer Engineering (BSCpE)"},
-        {value: "BSEE", text: "Bachelor of Science in Electrical Engineering (BSEE)"},
-        {value: "BSECE", text: "Bachelor of Science in Electronics Engineering (BSECE)"},
-        {value: "BSIE", text: "Bachelor of Science in Industrial Engineering (BSIE)"},
-        {value: "BSME", text: "Bachelor of Science in Mechanical Engineering (BSME)"},
-        {value: "BSRE", text: "Bachelor of Science in Railway Engineering (BSRE)"}
+        {value: "Bachelor of Science in Civil Engineering (BSCE)", text: "Bachelor of Science in Civil Engineering (BSCE)"},
+        {value: "Bachelor of Science in Computer Engineering (BSCpE)", text: "Bachelor of Science in Computer Engineering (BSCpE)"},
+        {value: "Bachelor of Science in Electrical Engineering (BSEE)", text: "Bachelor of Science in Electrical Engineering (BSEE)"},
+        {value: "Bachelor of Science in Electronics Engineering (BSECE)", text: "Bachelor of Science in Electronics Engineering (BSECE)"},
+        {value: "Bachelor of Science in Industrial Engineering (BSIE)", text: "Bachelor of Science in Industrial Engineering (BSIE)"},
+        {value: "Bachelor of Science in Mechanical Engineering (BSME)", text: "Bachelor of Science in Mechanical Engineering (BSME)"},
+        {value: "Bachelor of Science in Railway Engineering (BSRE)", text: "Bachelor of Science in Railway Engineering (BSRE)"}
     ],
     CHK: [
-        {value: "BPE", text: "Bachelor of Physical Education (BPE)"},
-        {value: "BSESS", text: "Bachelor of Science in Exercises and Sports (BSESS)"}
+        {value: "Bachelor of Physical Education (BPE)", text: "Bachelor of Physical Education (BPE)"},
+        {value: "Bachelor of Science in Exercises and Sports (BSESS)", text: "Bachelor of Science in Exercises and Sports (BSESS)"}
     ],
     CL: [
-        {value: "JD", text: "Juris Doctor (JD)"}
+        {value: "Juris Doctor (JD)", text: "Juris Doctor (JD)"}
     ],
     CPSPA: [
-        {value: "DPA", text: "Doctor in Public Administration (DPA)"},
-        {value: "MPA", text: "Master in Public Administration (MPA)"},
-        {value: "BPA", text: "Bachelor of Public Administration (BPA)"},
-        {value: "BAIS", text: "Bachelor of Arts in International Studies (BAIS)"},
-        {value: "BAPE", text: "Bachelor of Arts in Political Economy (BAPE)"},
-        {value: "BAPS", text: "Bachelor of Arts in Political Science (BAPS)"}
+        {value: "Doctor in Public Administration (DPA)", text: "Doctor in Public Administration (DPA)"},
+        {value: "Master in Public Administration (MPA)", text: "Master in Public Administration (MPA)"},
+        {value: "Bachelor of Public Administration (BPA)", text: "Bachelor of Public Administration (BPA)"},
+        {value: "Bachelor of Arts in International Studies (BAIS)", text: "Bachelor of Arts in International Studies (BAIS)"},
+        {value: "Bachelor of Arts in Political Economy (BAPE)", text: "Bachelor of Arts in Political Economy (BAPE)"},
+        {value: "Bachelor of Arts in Political Science (BAPS)", text: "Bachelor of Arts in Political Science (BAPS)"}
     ],
     CSSD: [
-        {value: "BAH", text: "Bachelor of Arts in History (BAH)"},
-        {value: "BAS", text: "Bachelor of Arts in Sociology (BAS)"},
-        {value: "BSC", text: "Bachelor of Science in Cooperatives (BSC)"},
-        {value: "BSE", text: "Bachelor of Science in Economics (BSE)"},
-        {value: "BSPSY", text: "Bachelor of Science in Psychology (BSPSY)"}
+        {value: "Bachelor of Arts in History (BAH)", text: "Bachelor of Arts in History (BAH)"},
+        {value: "Bachelor of Arts in Sociology (BAS)", text: "Bachelor of Arts in Sociology (BAS)"},
+        {value: "Bachelor of Science in Cooperatives (BSC)", text: "Bachelor of Science in Cooperatives (BSC)"},
+        {value: "Bachelor of Science in Economics (BSE)", text: "Bachelor of Science in Economics (BSE)"},
+        {value: "Bachelor of Science in Psychology (BSPSY)", text: "Bachelor of Science in Psychology (BSPSY)"}
     ],
     CS: [
-        {value: "BSFT", text: "Bachelor of Science Food Technology (BSFT)"},
-        {value: "BSAPMATH", text: "Bachelor of Science in Applied Mathematics (BSAPMATH)"},
-        {value: "BSBIO", text: "Bachelor of Science in Biology (BSBIO)"},
-        {value: "BSCHEM", text: "Bachelor of Science in Chemistry (BSCHEM)"},
-        {value: "BSMATH", text: "Bachelor of Science in Mathematics (BSMATH)"},
-        {value: "BSND", text: "Bachelor of Science in Nutrition and Dietetics (BSND)"},
-        {value: "BSPHY", text: "Bachelor of Science in Physics (BSPHY)"},
-        {value: "BSSTAT", text: "Bachelor of Science in Statistics (BSSTAT)"}
+        {value: "Bachelor of Science Food Technology (BSFT)", text: "Bachelor of Science Food Technology (BSFT)"},
+        {value: "Bachelor of Science in Applied Mathematics (BSAPMATH)", text: "Bachelor of Science in Applied Mathematics (BSAPMATH)"},
+        {value: "Bachelor of Science in Biology (BSBIO)", text: "Bachelor of Science in Biology (BSBIO)"},
+        {value: "Bachelor of Science in Chemistry (BSCHEM)", text: "Bachelor of Science in Chemistry (BSCHEM)"},
+        {value: "Bachelor of Science in Mathematics (BSMATH)", text: "Bachelor of Science in Mathematics (BSMATH)"},
+        {value: "Bachelor of Science in Nutrition and Dietetics (BSND)", text: "Bachelor of Science in Nutrition and Dietetics (BSND)"},
+        {value: "Bachelor of Science in Physics (BSPHY)", text: "Bachelor of Science in Physics (BSPHY)"},
+        {value: "Bachelor of Science in Statistics (BSSTAT)", text: "Bachelor of Science in Statistics (BSSTAT)"}
     ],
     CTHTM: [
-        {value: "BSHM", text: "Bachelor of Science in Hospitality Management (BSHM)"},
-        {value: "BSTM", text: "Bachelor of Science in Tourism Management (BSTM)"},
-        {value: "BSTRM", text: "Bachelor of Science in Transportation Management (BSTRM)"}
+        {value: "Bachelor of Science in Hospitality Management (BSHM)", text: "Bachelor of Science in Hospitality Management (BSHM)"},
+        {value: "Bachelor of Science in Tourism Management (BSTM)", text: "Bachelor of Science in Tourism Management (BSTM)"},
+        {value: "Bachelor of Science in Transportation Management (BSTRM)", text: "Bachelor of Science in Transportation Management (BSTRM)"}
     ]
 };
 
-document.getElementById('college').addEventListener('change', function () {
-    const collegeSelect = document.getElementById('college');
-    const courseSelect = document.getElementById('course');
+document.getElementById('College').addEventListener('change', function () {
+    const collegeSelect = document.getElementById('College');
+    const courseSelect = document.getElementById('Course');
     const selectedCollege = collegeSelect.value;
 
     courseSelect.innerHTML = '<option value="">Select Course</option>';
