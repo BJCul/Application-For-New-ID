@@ -231,6 +231,58 @@ nav .fa{
     font-size: 15px;
 }
 
+/*----- home page -----*/
+
+.home-page{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-page h1{
+    justify-content: center;
+    padding-top: 40px;
+    margin-top: 100px;
+    margin: 70px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.home-page p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+    margin: 25px;
+    text-align: center;
+}
+
+.home-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 12px 34px;
+    background: transparent;
+    background-color: transparent;
+    border: 1px solid #000000;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.home-btn:hover{
+    border: 1px solid #ac9015;
+    background: #ac9015;
+    transition: 1s;
+    color: #fcfcfc;
+}
+
+
+
 /*----- login -----*/
 
 .login-background-image{
