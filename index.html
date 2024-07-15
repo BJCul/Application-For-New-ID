@@ -10,6 +10,7 @@
     </head>
     <body>
 
+        
         <section class="header">
             <nav>
                 <a href="home.html"><img src="assets/images/PUPLogo.png" class="pup-logo"></a>
@@ -92,23 +93,27 @@
                             </div>
                             <div>
                                 <label for="Gender">Gender<span class="required-field">*</span></label>
-                                <input class="box1" id="Gender" type="text" name="Gender" placeholder="Gender" required>
+                                <select class="box1-dropdown" id="Gender" name="Gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
                             <div>
                                 <label for="College">College<span class="required-field">*</span></label>
-                                <input class="box1" id="College" type="text" name="College" placeholder="College" required>
+                                <input class="box1" id="College" type="text" pattern="[a-zA-Z]+" name="College" placeholder="College" required>
                             </div>
                             <div>
                                 <label for="Course">Course<span class="required-field">*</span></label>
-                                <input class="box1" id="Course" type="text" name="Course" placeholder="Course" required>
+                                <input class="box1" id="Course" type="text" pattern="[a-zA-Z]+" name="Course" placeholder="Course" required>
                             </div>
                             <div>
                                 <label for="YearAndSection">Year and Section<span class="required-field">*</span></label>
-                                <input class="box1" id="YearAndSection" type="text" name="YearAndSection" placeholder="Year and Section" required>
+                                <input class="box1" id="YearAndSection" type="text" name="YearAndSection" placeholder="ex. 2-1N" required>
                             </div>
                             <div>
                                 <label for="PhoneNo">Phone/Mobile No.<span class="required-field">*</span></label>
-                                <input class="box1" id="PhoneNo" type="number" name="PhoneNo" placeholder="Phone/Mobile No." required>
+                                <input class="box1" id="PhoneNo" type="number" name="PhoneNo" placeholder="09XXXXXXXXX" required>
                             </div>
                             <div>
                                 <label for="EmailAddress">Email Address<span class="required-field">*</span></label>
@@ -223,67 +228,6 @@
             <a href="" class="hero-btn">Submit Form</a>
         </div>
         </section> -->
-        <script>
-            const navigateToFormStep = (stepNumber) => {
-                /*** Hide steps ***/
-                document.querySelectorAll(".form-step").forEach((formStepElement) => {
-                    formStepElement.classList.add("display-none");
-                });
-                /*** Mark unfinished ***/
-                document.querySelectorAll(".form-progress-list").forEach((formStepHeader) => {
-                    formStepHeader.classList.add("form-progress-unfinished");
-                    formStepHeader.classList.remove("form-progress-active", "form-progress-completed");
-                });
-                
-                /*** Show current ***/
-                document.querySelector("#step-" + stepNumber).classList.remove("display-none");
-                
-                /*** Select step circle (progress bar) ***/
-                const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
-                
-                /*** Mark current as active ***/
-                formStepCircle.classList.remove("form-progress-unfinished", "form-progress-completed");
-                formStepCircle.classList.add("form-progress-active");
-                
-                /*** Loop through each step  ***/
-                for (let index = 0; index < stepNumber; index++) {
-                    const formStepCircle = document.querySelector('li[step="' + index + '"]');
-                    if (formStepCircle) {
-                        formStepCircle.classList.remove("form-progress-unfinished", "form-progress-active");
-                        formStepCircle.classList.add("form-progress-completed");
-                    }
-                }
-            };
-                
-            /*** Select all navigation buttons, loop through them, add listener ***/
-            document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
-                formNavigationBtn.addEventListener("click", () => {
-                    const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
-                    navigateToFormStep(stepNumber);
-                });
-            });
-
-            document.getElementById('sameAddress').addEventListener('change', function() {
-                if (this.checked) {
-                    document.getElementById('EmergencyRegion').value = document.getElementById('Region').value;
-                    document.getElementById('EmergencyProvince').value = document.getElementById('Province').value;
-                    document.getElementById('EmergencyCity').value = document.getElementById('City').value;
-                    document.getElementById('EmergencyBarangay').value = document.getElementById('Barangay').value;
-                    document.getElementById('EmergencyStreet').value = document.getElementById('Street').value;
-                    document.getElementById('EmergencyPostalCode').value = document.getElementById('PostalCode').value;
-                }
-            });
-
-            document.getElementById('newAddress').addEventListener('change', function() {
-                if (this.checked) {
-                    document.getElementById('EmergencyRegion').value = '';
-                    document.getElementById('EmergencyProvince').value = '';
-                    document.getElementById('EmergencyCity').value = '';
-                    document.getElementById('EmergencyBarangay').value = '';
-                    document.getElementById('EmergencyStreet').value = '';
-                    document.getElementById('EmergencyPostalCode').value = '';
-                }
-            });
-
-        </script>
-        
+        <script src="script.js"></script>
+    </body> 
+</html> 
