@@ -215,3 +215,13 @@ document.getElementById('College').addEventListener('change', function () {
     }
 });
 
+/*** Submission Alert ***/
+document.getElementById('userAccountSetupForm').addEventListener('submit', function(event) {
+    alert('Form submitted successfully!');
+    
+    /*** Redirect to index.html after a short delay ***/
+    setTimeout(function() {
+        window.location.href = 'index.html';
+    }, 1000); 
+});
+
