@@ -14,7 +14,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    background:#d2d1d1;
+    background:#e5e5e5;
 }
 
 .header-title p{ 
@@ -315,6 +315,7 @@ nav .fa{
     width: 100%;
     border: none;
     border-radius: 10px;
+    border: 1px solid #d2d2d2;
 }
 
 .box1-dropdown{
@@ -323,6 +324,7 @@ nav .fa{
     width: 105%;
     border: none;
     border-radius: 10px;
+    border: 1px solid #d2d2d2;
 }
 
 .forgotps-box1{
@@ -446,9 +448,10 @@ h2 {
     display: none;
 }
 .form-step {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     padding: 3rem;
+    background:#f3f3f3;
 }
 .font-normal {
     font-weight: normal;
@@ -511,7 +514,7 @@ ul.form-progress > li:not(:last-of-type) {
     top: 32%;
 }
 .form-progress-horizontal li:after {
-    background-color: #dee2e6;
+    background-color: #ffffff;
 }
 .form-progress-horizontal li.form-progress-completed:after {
     background-color: #786d2e;
@@ -541,7 +544,7 @@ ul.form-progress li a .form-progress-circle {
     color: #fff !important;
 }
 .form-progress .form-progress-unfinished .form-progress-circle {
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 }
 .form-progress .form-progress-completed .form-progress-circle {
     background-color: #ad7d15 !important;
